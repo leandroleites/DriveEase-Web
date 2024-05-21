@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #00254f;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #003366;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    margin-left: auto; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.account {
+    font-size: 0.8em;
+}
+
+
+.hero {
+    background-image: url('images/background-hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.search-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 500px; /* Largura máxima ajustada */
+    margin: 20px auto; /* Adicionado para centralizar horizontalmente */
+}
+
+.search-form .form-group {
+    margin-bottom: 15px;
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-form select,
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #f90;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+.partners {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.partner-logos img {
+    margin: 0 10px;
+    max-height: 50px;
+}
+
+.testimonials {
+    background-color: #fff; /* Alteração: fundo branco */
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 10%;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    padding: 20px 0;
+}
+
+.feature h2 {
+    margin: 0;
+}
+
+.pricing {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.price-item {
+    background-color: #f0f0f0;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #00254f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}

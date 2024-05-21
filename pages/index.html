@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEase - Aluguer de Carros</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url('../images/Ponte25deAbril2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ínicio</a></li>
+                <li><a href="greservas.html">Reservas</a></li> 
+                <li><a href="#">Veículos</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Assistência</a></li>
+                <li><a href="#">Feedbacks</a></li>
+                <li class="account"><a href="#">A Minha Conta</a></li> 
+            </ul>
+        </nav>
+
+
+        <div class="header-top">
+            <div class="logo">
+                <img src="../images/logo.png" alt="DriveEase Logo">
+            </div>
+            <div class="contact-info">
+                <span>Contacte os nossos agentes de reservas: +351 252 300 500</span>
+            </div>
+        </div>
+    </header>
+    <main>
+<section class="hero">
+    <div class="hero-text">
+        <h1>O Melhor Aluguer de Carros em Todo o Mundo</h1>
+        <p>Os membros recebem descontos exclusivos de até 15%! Registe-se/Faça login aqui</p>
+    </div>
+    <div class="search-form">
+        <form action="#">
+            <div class="form-group">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option value="portugal">Portugal</option>
+                    <option value="espanha">Espanha</option>
+                    <option value="franca">França</option>
+                    <option value="italia">Itália</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <select id="cidade">
+                    <option value="porto">Porto</option>
+                    <option value="lisbon">Lisbon</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="paris">Paris</option>
+                    <option value="roma">Roma</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data-levantamento">Data de Levantamento</label>
+                <input type="date" id="data-levantamento" value="2024-03-07">
+            </div>
+            <div class="form-group">
+                <label for="data-devolucao">Data de Devolução</label>
+                <input type="date" id="data-devolucao" value="2024-03-10">
+            </div>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+</section>
+
+        <section class="partners">
+            <div class="partner-logos">
+                <img src="../images/prozis.png" alt="Prozis">
+                <img src="../images/auchan.png" alt="Auchan">
+                <img src="../images/bp.png" alt="BP">
+                <img src="../images/fidelidade.png" alt="Fidelidade">
+                <img src="../images/mil.png" alt="Millenium">
+                <img src="../images/nos.png" alt="NOS">
+                <img src="../images/continental.png" alt="Continental">
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="testimonial">
+                <p>“Sem dúvida um serviço de excelência.” - PAULO</p>
+            </div>
+            <div class="testimonial">
+                <p>“Muito bom.” - ANA</p>
+            </div>
+            <div class="testimonial">
+                <p>“Rápido e eficiente. Recomendo!” - MARIA</p>
+            </div>
+            <div class="testimonial">
+                <p>“Atendimento ao cliente impecável.” - JOÃO</p>
+            </div>
+            <div class="testimonial">
+                <p>“Excelente experiência, sempre alugo com eles.” - CARLA</p>
+            </div>
+            <div class="testimonial">
+                <p>“Preços competitivos e serviço de qualidade.” - PEDRO</p>
+            </div>
+        </section>
+
+
+        <section class="features">
+            <div class="feature">
+                <h2>Os Melhores Preços</h2>
+            </div>
+            <div class="feature">
+                <h2>Reserva de Auto-Caravanas</h2>
+            </div>
+            <div class="feature">
+                <h2>Até 15% de Desconto</h2>
+            </div>
+        </section>
+        <section class="pricing">
+            <h3>As Melhores Ofertas em Portugal</h3>
+            <div class="pricing-table">
+                <div class="price-item">Aveiro €3/dia</div>
+                <div class="price-item">Porto €3/dia</div>
+                <div class="price-item">Almada €3/dia</div>
+                <div class="price-item">Lisboa €3/dia</div>
+                <div class="price-item">Setúbal €6/dia</div>
+                <div class="price-item">Coimbra €6/dia</div>
+                <div class="price-item">Braga €6/dia</div>
+                <div class="price-item">Funchal €6/dia</div>
+            </div>
+            <h3>Os Melhores Preços no Seu Destino Favorito</h3>
+            <div class="pricing-table">
+                <div class="price-item">Espanha €3/dia</div>
+                <div class="price-item">Grécia €3/dia</div>
+                <div class="price-item">França €4/dia</div>
+                <div class="price-item">Reino Unido €4/dia</div>
+                <div class="price-item">Estados Unidos €29/dia</div>
+                <div class="price-item">Canadá €14/dia</div>
+                <div class="price-item">Itália €4/dia</div>
+                <div class="price-item">Malta €68/dia</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Os Melhores Destinos</h4>
+                <ul>
+                    <li><a href="#">Portugal</a></li>
+                    <li><a href="#">Espanha</a></li>
+                    <li><a href="#">França</a></li>
+                    <li><a href="#">Itália</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Mais Destinos</h4>
+                <ul>
+                    <li><a href="#">Grécia</a></li>
+                    <li><a href="#">Reino Unido</a></li>
+                    <li><a href="#">Estados Unidos</a></li>
+                    <li><a href="#">Canadá</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Planejar a Sua Viagem</h4>
+                <ul>
+                    <li><a href="#">Dicas de Viagem</a></li>
+                    <li><a href="#">Seguro de Viagem</a></li>
+                    <li><a href="#">Locais para Visitar</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>A Nossa Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DriveEase | Preocupação com a sua privacidade | Definições de Cookies | Termos e Condições do Site</p>
+        </div>
+    </footer>
+</body>
+</html>
