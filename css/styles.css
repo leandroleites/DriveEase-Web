@@ -1,23 +1,22 @@
+/* Tipografia */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     background-color: #00254f;
     color: #fff;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
     padding: 10px 20px;
 }
 
+/* Navegação */
 nav {
-    background-color: #003366;
+    background-color: #00254f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -40,15 +39,24 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-nav ul li.account {
-    font-size: 0.8em;
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+nav ul li.account a {
+    font-size: 1em;
+    font-weight: bold;
+}
 
+/* Hero Section */
 .hero {
-    background-image: url('images/background-hero.png');
+    background-image: url('../images/background-hero.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -59,19 +67,21 @@ nav ul li.account {
 .hero-text h1 {
     font-size: 2.5em;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text p {
     font-size: 1.2em;
 }
 
+/* Formulário de Pesquisa */
 .search-form {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    max-width: 500px; /* Largura máxima ajustada */
-    margin: 20px auto; /* Adicionado para centralizar horizontalmente */
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 .search-form .form-group {
@@ -89,6 +99,7 @@ nav ul li.account {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .search-form button {
@@ -99,9 +110,14 @@ nav ul li.account {
     color: #fff;
     font-size: 1em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.search-form button:hover {
+    background-color: #e07b00;
+}
 
+/* Parceiros */
 .partners {
     background-color: #f0f0f0;
     padding: 20px 0;
@@ -113,8 +129,9 @@ nav ul li.account {
     max-height: 50px;
 }
 
+/* Depoimentos */
 .testimonials {
-    background-color: #fff; /* Alteração: fundo branco */
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     padding: 40px;
@@ -123,90 +140,35 @@ nav ul li.account {
 .testimonial {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    max-width: 300px;
     text-align: center;
-    width: 10%;
-    height: 67px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-.testimonial p {
-    font-size: 16px;
-    color: #333;
+.testimonial:hover {
+    transform: translateY(-10px);
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    background-color: #e0e0e0;
-    padding: 20px 0;
-}
-
-.feature h2 {
-    margin: 0;
-}
-
-.pricing {
-    background-color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.pricing-table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.price-item {
-    background-color: #f0f0f0;
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
+/* Rodapé */
 footer {
     background-color: #00254f;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+footer p {
+    margin: 10px 0 0;
 }
 
-.footer-section {
-    margin: 10px;
-}
-
-.footer-section h4 {
+.contact-info {
     margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    border-top: 1px solid #fff;
-    padding-top: 10px;
+.contact-info i {
+    margin-right: 5px;
 }
