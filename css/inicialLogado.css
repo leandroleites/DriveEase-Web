@@ -1,0 +1,150 @@
+body {
+    background-image: url('../images/Ponte25deAbril2.jpeg');
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    overflow-x: hidden;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+header, nav {
+    background: rgba(0, 37, 79, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+nav ul li.account a {
+    font-size: 1em;
+    font-weight: bold;
+}
+.hero {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
+    text-align: center;
+}
+.hero-text .subheading {
+    font-size: 2.3em;
+    color: #fbfcfe; /* Muda a cor para um azul claro */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    font-family: 'Roboto', sans-serif; /* Muda a fonte */
+}
+.search-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.search-form .form-group {
+    margin-bottom: 15px;
+}
+.search-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.search-form select,
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.search-form button {
+    padding: 10px 20px;
+    background-color: #f90;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-form button:hover {
+    background-color: #e07b00;
+}
+.feedbacks {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.feedbacks h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.feedback {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 250px;
+}
+.feedback p {
+    font-size: 1em;
+    margin: 0;
+}
+.overlay-section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+footer {
+    background: #00254f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer p {
+    margin: 10px 0 0;
+}
+.contact-info {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.contact-info i {
+    margin-right: 5px;
+}
+.right-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.right-menu li {
+    margin-left: 15px;
+}
