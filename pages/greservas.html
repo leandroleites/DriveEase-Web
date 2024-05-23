@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão de Aluguer - DriveEase</title>
-    <link rel="stylesheet" href="../css/styles1.css">
-    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Aluguer de Carros</title>
+  <link rel="stylesheet" href="../css/greservas.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ínicio</a></li>
-                <li><a href="greservas.html">Reservas</a></li>
-                <li><a href="#">Veículos</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Assistência</a></li>
-                <li><a href="#">Feedbacks</a></li>
-                <li class="account"><a href="#">A Minha Conta</a></li> 
-            </ul>
-        </nav>
-        <div class="header-top">
-            <div class="logo">
-                <img src="../images/logo.png" alt="DriveEase Logo">
-            </div>
-            <div class="contact-info">
-                <span>Contacte os nossos agentes de reservas: +351 252 300 500</span>
-            </div>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="inicial.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
+          <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
+          <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
+          <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
         </div>
-
-    </header>
+        <div class="right-menu">
+          <li class="account"><a href="#" id="loginBtn"><i class="fas fa-user"></i> Login/Registo</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
     <main>
         <section class="rental-management">
             <h2>Gestão de Aluguer</h2>
@@ -60,67 +54,12 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-top">
-            <h4>Inscreva-se para ofertas exclusivas!</h4>
-            <div class="newsletter">
-                <input type="email" placeholder="O seu e-mail">
-                <button type="submit">></button>
-            </div>
-        </div>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Os Melhores Destinos</h4>
-                <ul>
-                    <li><a href="#">Funchal</a></li>
-                    <li><a href="#">Braga</a></li>
-                    <li><a href="#">Londres</a></li>
-                    <li><a href="#">Madeira</a></li>
-                    <li><a href="#">Barcelona</a></li>
-                    <li><a href="#">Paris</a></li>
-                    <li><a href="#">Milão</a></li>
-                    <li><a href="#">Faro</a></li>
-                    <li><a href="#">Lisboa</a></li>
-                    <li><a href="#">Porto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Mais Destinos</h4>
-                <ul>
-                    <li><a href="#">Bélgica</a></li>
-                    <li><a href="#">Amsterdão</a></li>
-                    <li><a href="#">Madrid</a></li>
-                    <li><a href="#">Roma</a></li>
-                    <li><a href="#">Munique</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Planear a Sua Viagem</h4>
-                <ul>
-                    <li><a href="#">Infográficos</a></li>
-                    <li><a href="#">Blog de Viagens</a></li>
-                    <li><a href="#">Road Trips</a></li>
-                    <li><a href="#">Conduzir noutros países</a></li>
-                    <li><a href="#">As nossas parcerias</a></li>
-                    <li><a href="#">Dicas de viagem</a></li>
-                    <li><a href="#">Guia de destinos</a></li>
-                    <li><a href="#">Categorias de Viaturas</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>A Nossa Empresa</h4>
-                <ul>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Emprego</a></li>
-                    <li><a href="#">Perguntas Frequentes</a></li>
-                    <li><a href="#">Opiniões de Clientes</a></li>
-                    <li><a href="#">Assistência</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 DriveEase | Preocupado com sua privacidade? | Gerir cookies | Termos e Condições do Site</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

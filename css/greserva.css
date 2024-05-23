@@ -1,0 +1,594 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #003366;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-top .logo img {
+    height: 50px;
+}
+
+.header-top .contact-info {
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+.reservation-details h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+
+.reservation-card, .client-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.car-details img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.car-info {
+    flex-grow: 1;
+}
+
+.car-info h3 {
+    margin: 0;
+    color: #003366;
+}
+
+.car-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.car-features span {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.car-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.car-info ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.reservation-info {
+    margin-top: 20px;
+}
+
+.reservation-info .info-item {
+    margin-bottom: 10px;
+}
+
+.reservation-info .info-item strong {
+    color: #003366;
+}
+
+.total-price {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total-price h3 {
+    color: #003366;
+}
+
+.total-price ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.total-price ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.total-price ul li a {
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.total-price ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.client-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.client-details img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.client-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.client-info .contact-info p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-top, .footer-content, .footer-bottom {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-top h4 {
+    margin: 0;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.action-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.action-buttons li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.action-buttons li a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #003366; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.action-buttons li a.button:hover {
+    background-color: #001a33; 
+    border-color: #001a33; 
+}
+
+/* Base styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Background */
+body {
+  background-image: url('../images/Ponte25deAbril2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header and Navigation */
+header, nav {
+  background: rgba(0, 37, 79, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; /* Add space-between */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .left-menu,
+nav ul .right-menu {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li.account a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-text a {
+  color: #f90;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero button {
+  background-color: #f90;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e07b00;
+}
+
+/* Search Form */
+.search-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.search-form .form-group {
+  margin-bottom: 15px;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.search-form select,
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #f90;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #e07b00;
+}
+
+/* Feedback Section */
+.feedbacks {
+  background: rgba(255, 255, 255, 0.9); /* Increased opacity */
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedbacks h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.feedback {
+  background: #f8f8f8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 250px;
+}
+
+.feedback p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background: #00254f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modal-button {
+  background-color: #00254f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-button:hover {
+  background-color: #001f3d;
+}
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.message {
+  background-color: #00254f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.message .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overlay-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+
+

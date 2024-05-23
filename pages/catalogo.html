@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Comparar e Reservar Carros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="inicial.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
+          <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
+          <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
+          <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>COMPARE, POUPE E RESERVE COM CONFIANÇA!</h1>
+    <div class="filter-section">
+      <select id="filter-transmission">
+        <option value="">Transmissão</option>
+        <option value="Automatic">Automático</option>
+        <option value="Manual">Manual</option>
+      </select>
+      <select id="filter-fuel">
+        <option value="">Combustível</option>
+        <option value="Gasoline">Gasolina</option>
+        <option value="Diesel">Diesel</option>
+      </select>
+      <select id="filter-model">
+        <option value="">Modelo</option>
+        <option value="Mercedes CLA Coupe">Mercedes CLA Coupe</option>
+        <option value="Mercedes CLA Shooting Brake">Mercedes CLA Shooting Brake</option>
+        <option value="Mercedes C220 Estate">Mercedes C220 Estate</option>
+        <option value="Mercedes GLC">Mercedes GLC</option>
+      </select>
+      <select id="filter-supplier">
+        <option value="">Fornecedor</option>
+        <option value="Fornecedor1">Tangerine</option>
+        <option value="Fornecedor2">Centauro</option>
+      </select>
+      <select id="filter-category">
+        <option value="">Categoria</option>
+        <option value="Mini">Mini</option>
+        <option value="Económico">Económico</option>
+        <option value="Intermédio">Intermédio</option>
+        <option value="Familiar">Familiar</option>
+        <option value="Estatuto">Estatuto</option>
+        <option value="Carrinha">Carrinha</option>
+        <option value="Luxuoso">Luxuoso</option>
+      </select>
+    </div>
+
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>Fornecedor</th>
+          <th>Mini</th>
+          <th>Económico</th>
+          <th>Intermédio</th>
+          <th>Familiar</th>
+          <th>Estatuto</th>
+          <th>Carrinha</th>
+          <th>Luxuoso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-supplier="Fornecedor1"><img src="../images/tangerinelogo.png" alt="Fornecedor"></td>
+          <td class="price">€34</td>
+          <td class="price">€37</td>
+          <td class="price">€49</td>
+          <td class="price">€54</td>
+          <td class="price">€66</td>
+          <td class="price">€45</td>
+          <td class="price">€83</td>
+        </tr>
+        <tr>
+          <td data-supplier="Fornecedor2"><img src="../images/centaurologo.png" alt="Fornecedor"></td>
+          <td class="price">€33</td>
+          <td class="price">€39</td>
+          <td class="price">€46</td>
+          <td class="price">€55</td>
+          <td class="price">€64</td>
+          <td class="price">€48</td>
+          <td class="price">€81</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="car-listing">
+      <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes CLA Coupe" data-supplier="Fornecedor1" data-category="Luxuoso">
+        <img src="../images/mercedes.png" alt="Carro">
+        <h3>MERCEDES CLA COUPE</h3>
+        <p>€136.59</p>
+        <p>Pacote Standard: €232.54</p>
+        <button>Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes CLA Shooting Brake" data-supplier="Fornecedor1" data-category="Luxuoso">
+        <img src="../images/mercedesclashooting.png" alt="Carro">
+        <h3>MERCEDES CLA SHOOTING BRAKE</h3>
+        <p>€139.30</p>
+        <p>Pacote Standard: €235.56</p>
+        <button>Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Manual" data-fuel="Diesel" data-model="Mercedes C220 Estate" data-supplier="Fornecedor2" data-category="Familiar">
+        <img src="../images/classec.png" alt="Carro">
+        <h3>MERCEDES C220 ESTATE</h3>
+        <p>€184.78</p>
+        <p>Pacote Standard: €299.66</p>
+        <button>Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes GLC" data-supplier="Fornecedor2" data-category="Estatuto">
+        <img src="../images/mercedesglc.png" alt="Carro">
+        <h3>MERCEDES GLC</h3>
+        <p>€300.06</p>
+        <p>Pacote Standard: €456.21</p>
+        <button>Alugar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterTransmission = document.getElementById('filter-transmission');
+  const filterFuel = document.getElementById('filter-fuel');
+  const filterModel = document.getElementById('filter-model');
+  const filterSupplier = document.getElementById('filter-supplier');
+  const filterCategory = document.getElementById('filter-category');
+  const carItems = document.querySelectorAll('.car-item');
+
+  function filterCars() {
+    const transmissionValue = filterTransmission.value;
+    const fuelValue = filterFuel.value;
+    const modelValue = filterModel.value;
+    const supplierValue = filterSupplier.value;
+    const categoryValue = filterCategory.value;
+
+    carItems.forEach(car => {
+      const matchesTransmission = transmissionValue === '' || car.dataset.transmission === transmissionValue;
+      const matchesFuel = fuelValue === '' || car.dataset.fuel === fuelValue;
+      const matchesModel = modelValue === '' || car.dataset.model === modelValue;
+      const matchesSupplier = supplierValue === '' || car.dataset.supplier === supplierValue;
+      const matchesCategory = categoryValue === '' || car.dataset.category === categoryValue;
+
+      if (matchesTransmission && matchesFuel && matchesModel && matchesSupplier && matchesCategory) {
+        car.style.display = 'block';
+      } else {
+        car.style.display = 'none';
+      }
+    });
+  }
+
+  filterTransmission.addEventListener('change', filterCars);
+  filterFuel.addEventListener('change', filterCars);
+  filterModel.addEventListener('change', filterCars);
+  filterSupplier.addEventListener('change', filterCars);
+  filterCategory.addEventListener('change', filterCars);
+});
+</script>
+</body>
+</html>

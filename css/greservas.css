@@ -1,0 +1,507 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #00254f;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #003366;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    margin-left: auto; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.account {
+    font-size: 0.8em;
+}
+
+main {
+    padding: 20px;
+}
+
+.rental-management {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.rental-management h2 {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f90;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.rental-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.rental-item img {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.rental-details {
+    flex-grow: 1;
+}
+
+.view-rental {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rental-date {
+    margin-left: 10px;
+    color: #888;
+}
+
+footer {
+    background-color: #00254f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top {
+    background-color: #004080;
+    padding: 10px 20px;
+}
+
+.footer-top h4 {
+    margin: 0 0 10px 0;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #f90;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+/* Base styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Background */
+body {
+  background-image: url('../images/Ponte25deAbril2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header and Navigation */
+header, nav {
+  background: rgba(0, 37, 79, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; /* Add space-between */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .left-menu,
+nav ul .right-menu {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li.account a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-text a {
+  color: #f90;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero button {
+  background-color: #f90;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #e07b00;
+}
+
+/* Search Form */
+.search-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.search-form .form-group {
+  margin-bottom: 15px;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.search-form select,
+.search-form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #f90;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #e07b00;
+}
+
+/* Feedback Section */
+.feedbacks {
+  background: rgba(255, 255, 255, 0.9); /* Increased opacity */
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedbacks h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.feedback {
+  background: #f8f8f8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 250px;
+}
+
+.feedback p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background: #00254f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modal-button {
+  background-color: #00254f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-button:hover {
+  background-color: #001f3d;
+}
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.message {
+  background-color: #00254f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.message .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overlay-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}

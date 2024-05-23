@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DriveEase - Aluguer de Carros</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/inicial.css">
   <link rel="icon" href="../images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -14,10 +14,10 @@
       <ul>
         <div class="left-menu">
           <li><a href="inicial.html" class="active"><i class="fas fa-home"></i> Início</a></li>
-          <li><a href="#"><i class="fas fa-car"></i> Veículos</a></li>
+          <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
           <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
-          <li><a href="#"><i class="fas fa-life-ring"></i> Assistência</a></li>
-          <li><a href="#"><i class="fas fa-comments"></i> Feedbacks</a></li>
+          <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
+          <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
         </div>
         <div class="right-menu">
           <li class="account"><a href="#" id="loginBtn"><i class="fas fa-user"></i> Login/Registo</a></li>
@@ -33,10 +33,11 @@
         <button id="saibaMaisBtn">Saiba Mais</button>
       </div>
       <div class="search-form">
-        <form>
+        <form id="searchForm">
           <div class="form-group">
             <label for="pais">País</label>
-            <select id="pais">
+            <select id="pais" required>
+              <option value="">Selecione o País</option>
               <option value="portugal">Portugal</option>
               <option value="espanha">Espanha</option>
               <option value="franca">França</option>
@@ -45,22 +46,20 @@
           </div>
           <div class="form-group">
             <label for="cidade">Cidade</label>
-            <select id="cidade">
-              <option value="lisboa">Lisboa</option>
-              <option value="porto">Porto</option>
-              <option value="faro">Faro</option>
-              <!-- Adicione mais opções conforme necessário -->
+            <select id="cidade" required>
+              <option value="">Selecione a Cidade</option>
+              <!-- As opções serão adicionadas dinamicamente -->
             </select>
           </div>
           <div class="form-group">
             <label for="data-inicio">Data de Início</label>
-            <input type="date" id="data-inicio">
+            <input type="date" id="data-inicio" required>
           </div>
           <div class="form-group">
             <label for="data-fim">Data de Fim</label>
-            <input type="date" id="data-fim">
+            <input type="date" id="data-fim" required>
           </div>
-          <button type="submit">Pesquisar</button>
+          <button type="submit" id="searchButton">Pesquisar</button>
         </form>
       </div>
     </section>
@@ -203,6 +202,48 @@
       event.preventDefault();
       console.log('Login bem-sucedido, redirecionando...');
       window.location.href = 'inicialLogado.html';
+    });
+
+    // Cidades por país
+    const cidadesPorPais = {
+      portugal: ["Lisboa", "Porto", "Faro"],
+      espanha: ["Madrid", "Barcelona", "Sevilha"],
+      franca: ["Paris", "Lyon", "Marselha"]
+    };
+
+    // Atualizar as opções de cidade com base no país selecionado
+    document.getElementById('pais').addEventListener('change', function() {
+      const pais = this.value;
+      const cidadeSelect = document.getElementById('cidade');
+      cidadeSelect.innerHTML = '<option value="">Selecione a Cidade</option>'; // Resetar as opções
+
+      if (pais && cidadesPorPais[pais]) {
+        cidadesPorPais[pais].forEach(cidade => {
+          const option = document.createElement('option');
+          option.value = cidade.toLowerCase();
+          option.textContent = cidade;
+          cidadeSelect.appendChild(option);
+        });
+      }
+    });
+
+    // Função para redirecionar ao clicar no botão Pesquisar
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const pais = document.getElementById('pais').value;
+      const cidade = document.getElementById('cidade').value;
+      const dataInicio = document.getElementById('data-inicio').value;
+      const dataFim = document.getElementById('data-fim').value;
+
+      if (pais && cidade && dataInicio && dataFim) {
+        if (new Date(dataFim) >= new Date(dataInicio)) {
+          window.location.href = 'catalogo.html';
+        } else {
+          alert('A data de fim não pode ser anterior à data de início.');
+        }
+      } else {
+        alert('Por favor, preencha todos os campos.');
+      }
     });
   </script>
 </body>

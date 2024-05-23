@@ -1,0 +1,132 @@
+/* Base styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #ffffff; /* Background set to white */
+}
+
+/* Header and Navigation */
+header, nav {
+  background: rgba(0, 37, 79, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .left-menu,
+nav ul .right-menu {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li.account a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Vehicle Details Section */
+.vehicle-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.vehicle-details h2 {
+  margin-bottom: 20px;
+  color: #002b5c;
+  text-align: center;
+}
+
+.vehicle-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.vehicle-info img {
+  height: 150px;
+  margin-right: 20px;
+}
+
+.details {
+  flex: 1;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details ul li {
+  margin-bottom: 5px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #002b5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #00254f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}

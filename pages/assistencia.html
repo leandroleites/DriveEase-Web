@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Suporte ao Cliente</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/assistencia.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="inicial.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
+          <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
+          <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
+          <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="support-section">
+      <h2>Suporte ao Cliente</h2>
+      <div class="support-form">
+        <form action="mailto:suporte@driveease.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Enviar</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Locais Físicos</h3>
+        <ul>
+          <li><strong>Porto:</strong> Rua das Flores, 123, Porto, 4050-265</li>
+          <li><strong>Lisboa:</strong> Avenida da Liberdade, 456, Lisboa, 1250-140</li>
+          <li><strong>Faro:</strong> Rua de Santo António, 789, Faro, 8000-281</li>
+        </ul>
+        <h3>Números de Telemóvel</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +351 252 300 500</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

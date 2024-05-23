@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Aluguer de Carros</title>
+  <link rel="stylesheet" href="../css/manutençao.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="inicial.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
+          <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
+          <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
+          <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
+        </div>
+        <div class="right-menu">
+          <li class="account"><a href="#" id="loginBtn"><i class="fas fa-user"></i> Login/Registo</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <section class="maintenance-request">
+            <h2>Solicitar Manutenção</h2>
+            <form>
+                <div class="form-group">
+                    <label for="vehicle-id">ID do Veículo</label>
+                    <input type="text" id="vehicle-id" placeholder="Id do Veículo">
+                </div>
+                <div class="form-group">
+                    <label for="schedule-date">Agendamento</label>
+                    <div class="schedule">
+                        <input type="date" id="schedule-date" value="2024-03-07">
+                        <input type="time" id="schedule-time" value="10:00">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Motivo</label>
+                    <textarea id="reason" placeholder="Faça uma breve descrição"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
