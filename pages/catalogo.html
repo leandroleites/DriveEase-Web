@@ -18,7 +18,6 @@
           <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
           <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
         </div>
-
       </ul>
     </nav>
   </header>
@@ -35,6 +34,8 @@
         <option value="">Combustível</option>
         <option value="Gasoline">Gasolina</option>
         <option value="Diesel">Diesel</option>
+        <option value="Electric">Elétrico</option>
+        <option value="Hybrid">Híbrido</option>
       </select>
       <select id="filter-model">
         <option value="">Modelo</option>
@@ -42,6 +43,12 @@
         <option value="Mercedes CLA Shooting Brake">Mercedes CLA Shooting Brake</option>
         <option value="Mercedes C220 Estate">Mercedes C220 Estate</option>
         <option value="Mercedes GLC">Mercedes GLC</option>
+        <option value="Mercedes-Benz Classe A 200">Mercedes-Benz Classe A 200</option>
+        <option value="BMW iX xDrive40">BMW iX xDrive40</option>
+        <option value="NISSAN JUKE HÍBRIDO">NISSAN JUKE HÍBRIDO</option>
+        <option value="Alfa Romeo Giulia">Alfa Romeo Giulia</option>
+        <option value="Audi Q5">Audi Q5</option>
+        <option value="Tesla Model S">Tesla Model S</option>
       </select>
       <select id="filter-supplier">
         <option value="">Fornecedor</option>
@@ -60,71 +67,76 @@
       </select>
     </div>
 
-    <table class="results-table">
-      <thead>
-        <tr>
-          <th>Fornecedor</th>
-          <th>Mini</th>
-          <th>Económico</th>
-          <th>Intermédio</th>
-          <th>Familiar</th>
-          <th>Estatuto</th>
-          <th>Carrinha</th>
-          <th>Luxuoso</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-supplier="Fornecedor1"><img src="../images/tangerinelogo.png" alt="Fornecedor"></td>
-          <td class="price">€34</td>
-          <td class="price">€37</td>
-          <td class="price">€49</td>
-          <td class="price">€54</td>
-          <td class="price">€66</td>
-          <td class="price">€45</td>
-          <td class="price">€83</td>
-        </tr>
-        <tr>
-          <td data-supplier="Fornecedor2"><img src="../images/centaurologo.png" alt="Fornecedor"></td>
-          <td class="price">€33</td>
-          <td class="price">€39</td>
-          <td class="price">€46</td>
-          <td class="price">€55</td>
-          <td class="price">€64</td>
-          <td class="price">€48</td>
-          <td class="price">€81</td>
-        </tr>
-      </tbody>
-    </table>
-
     <section class="car-listing">
       <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes CLA Coupe" data-supplier="Fornecedor1" data-category="Luxuoso">
         <img src="../images/mercedes.png" alt="Carro">
         <h3>MERCEDES CLA COUPE</h3>
         <p>€136.59</p>
         <p>Pacote Standard: €232.54</p>
-        <button>Alugar</button>
+        <button onclick="location.href='pagamento.html?car=Mercedes CLA Coupe&price=136.59'">Alugar</button>
       </div>
       <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes CLA Shooting Brake" data-supplier="Fornecedor1" data-category="Luxuoso">
         <img src="../images/mercedesclashooting.png" alt="Carro">
         <h3>MERCEDES CLA SHOOTING BRAKE</h3>
         <p>€139.30</p>
         <p>Pacote Standard: €235.56</p>
-        <button>Alugar</button>
+        <button onclick="location.href='pagamento.html?car=Mercedes CLA Shooting Brake&price=139.30'">Alugar</button>
       </div>
       <div class="car-item" data-transmission="Manual" data-fuel="Diesel" data-model="Mercedes C220 Estate" data-supplier="Fornecedor2" data-category="Familiar">
         <img src="../images/classec.png" alt="Carro">
         <h3>MERCEDES C220 ESTATE</h3>
         <p>€184.78</p>
         <p>Pacote Standard: €299.66</p>
-        <button>Alugar</button>
+        <button onclick="location.href='pagamento.html?car=Mercedes C220 Estate&price=184.78'">Alugar</button>
       </div>
       <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes GLC" data-supplier="Fornecedor2" data-category="Estatuto">
         <img src="../images/mercedesglc.png" alt="Carro">
         <h3>MERCEDES GLC</h3>
         <p>€300.06</p>
         <p>Pacote Standard: €456.21</p>
-        <button>Alugar</button>
+        <button onclick="location.href='pagamento.html?car=Mercedes GLC&price=300.06'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Gasoline" data-model="Mercedes-Benz Classe A 200" data-supplier="Fornecedor1" data-category="Económico">
+        <img src="../images/mercedesa200.png" alt="Carro">
+        <h3>MERCEDES-BENZ CLASSE A 200</h3>
+        <p>€34.00</p>
+        <p>Pacote Standard: €50.00</p>
+        <button onclick="location.href='pagamento.html?car=Mercedes-Benz Classe A 200&price=34.00'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Electric" data-model="BMW iX xDrive40" data-supplier="Fornecedor2" data-category="Luxuoso">
+        <img src="../images/bmwxi40.png" alt="Carro">
+        <h3>BMW IX XDRIVE40</h3>
+        <p>€83.00</p>
+        <p>Pacote Standard: €120.00</p>
+        <button onclick="location.href='pagamento.html?car=BMW iX xDrive40&price=83.00'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Hybrid" data-model="NISSAN JUKE HÍBRIDO" data-supplier="Fornecedor1" data-category="Intermédio">
+        <img src="../images/nissanjuke.png" alt="Carro">
+        <h3>NISSAN JUKE HÍBRIDO</h3>
+        <p>€49.00</p>
+        <p>Pacote Standard: €70.00</p>
+        <button onclick="location.href='pagamento.html?car=NISSAN JUKE HÍBRIDO&price=49.00'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Diesel" data-model="Alfa Romeo Giulia" data-supplier="Fornecedor2" data-category="Estatuto">
+        <img src="../images/alfaromeogiulia.png" alt="Carro">
+        <h3>ALFA ROMEO GIULIA</h3>
+        <p>€66.00</p>
+        <p>Pacote Standard: €90.00</p>
+        <button onclick="location.href='pagamento.html?car=Alfa Romeo Giulia&price=66.00'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Diesel" data-model="Audi Q5" data-supplier="Fornecedor1" data-category="Familiar">
+        <img src="../images/audiq5.png" alt="Carro">
+        <h3>AUDI Q5</h3>
+        <p>€54.00</p>
+        <p>Pacote Standard: €80.00</p>
+        <button onclick="location.href='pagamento.html?car=Audi Q5&price=54.00'">Alugar</button>
+      </div>
+      <div class="car-item" data-transmission="Automatic" data-fuel="Electric" data-model="Tesla Model S" data-supplier="Fornecedor2" data-category="Luxuoso">
+        <img src="../images/teslamodels.png" alt="Carro">
+        <h3>TESLA MODEL S LONG RANGE</h3>
+        <p>€81.00</p>
+        <p>Pacote Standard: €110.00</p>
+        <button onclick="location.href='pagamento.html?car=Tesla Model S&price=81.00'">Alugar</button>
       </div>
     </section>
   </main>

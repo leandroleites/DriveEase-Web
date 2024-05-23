@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header, nav {
+  background: rgba(0, 37, 79, 0.9);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul .left-menu,
+nav ul .right-menu {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav ul li.account a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Payment Form */
+.payment-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.payment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.payment-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.payment-form .payment-button {
+  background-color: #f90;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-form .payment-button:hover {
+  background-color: #e07b00;
+}
+
+/* Footer */
+footer {
+  background: #00254f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
