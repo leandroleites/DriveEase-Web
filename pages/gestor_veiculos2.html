@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Gerir Veículos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/gestor.css">
+  <link rel="stylesheet" href="../css/gerirveiculos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="gestor_inicial.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="gestor_reservas.html"><i class="fas fa-calendar-alt"></i> Gerir Reservas</a></li>
+          <li><a href="gestor_veiculos.html" class="active"><i class="fas fa-car"></i> Gerir Veículos</a></li>
+          <li><a href="gestor_feedbacks.html"><i class="fas fa-comments"></i> Gerir Feedbacks</a></li>
+          <li><a href="gestor_manutencoes.html"><i class="fas fa-wrench"></i> Gerir Manutenções</a></li>
+          <li><a href="gestor_clientes.html"><i class="fas fa-users"></i> Gerir Clientes</a></li>
+        </div>
+        <div class="right-menu">
+          <li><a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="vehicle-management">
+      <h2>Gerir Veículos</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar por nome ou matrícula">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="add-vehicle">
+        <a href="adicionar_veiculo.html" class="btn-add"><i class="fas fa-plus"></i> Adicionar Veículo</a>
+      </div>
+      <div class="vehicle-list">
+        <div class="vehicle-item">
+          <img src="../images/mercedes.png" alt="Mercedes-Benz CLA Coupe">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Mercedes CLA Coupe</p>
+            <p class="vehicle-status">Luxuoso · Automático · Gasolina</p>
+            <p class="vehicle-price">€136.59/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=7" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=7" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=7" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=7" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/mercedesclashooting.png" alt="Mercedes-Benz CLA Shooting Brake">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Mercedes CLA Shooting Brake</p>
+            <p class="vehicle-status">Luxuoso · Automático · Gasolina</p>
+            <p class="vehicle-price">€139.30/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=8" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=8" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=8" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=8" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/classec.png" alt="Mercedes-Benz C220 Estate">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Mercedes C220 Estate</p>
+            <p class="vehicle-status">Familiar · Manual · Diesel</p>
+            <p class="vehicle-price">€184.78/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=9" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=9" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=9" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=9" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/mercedesglc.png" alt="Mercedes-Benz GLC">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Mercedes GLC</p>
+            <p class="vehicle-status">Estatuto · Automático · Gasolina</p>
+            <p class="vehicle-price">€300.06/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=10" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=10" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=10" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=10" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="gestor_veiculos.html"><button class="pagination-button">Anterior</button></a>
+        <a href="gestor_veiculos.html"><button class="pagination-button">1</button></a>
+        <button class="pagination-button active">2</button>
+        <button class="pagination-button" disabled>Próximo</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

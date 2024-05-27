@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Gerir Reservas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/gestor.css">
+  <link rel="stylesheet" href="../css/gerirreservas.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="gestor_inicial.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="gestor_reservas.html" class="active"><i class="fas fa-calendar-alt"></i> Gerir Reservas</a></li>
+          <li><a href="gestor_veiculos.html"><i class="fas fa-car"></i> Gerir Veículos</a></li>
+          <li><a href="gestor_feedbacks.html"><i class="fas fa-comments"></i> Gerir Feedbacks</a></li>
+          <li><a href="gestor_manutencoes.html"><i class="fas fa-wrench"></i> Gerir Manutenções</a></li>
+          <li><a href="gestor_clientes.html"><i class="fas fa-users"></i> Gerir Clientes</a></li>
+        </div>
+        <div class="right-menu">
+          <li><a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="reservation-management">
+      <h2>Gerir Reservas</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar por nome do cliente ou veículo">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="reservation-list">
+        <div class="reservation-item">
+          <div class="reservation-details">
+            <p class="reservation-client"><strong>Cliente:</strong> João Silva</p>
+            <p class="reservation-vehicle"><strong>Veículo:</strong> Mercedes-Benz Classe A 200</p>
+            <p class="reservation-dates"><strong>Datas:</strong> 01/06/2024 - 10/06/2024</p>
+            <p class="reservation-status"><strong>Status:</strong> Confirmada</p>
+          </div>
+          <div class="reservation-actions">
+            <a href="edit_reservation.html?id=1" class="btn"><i class="fas fa-edit"></i> Editar</a>
+            <a href="delete_reservation.html?id=1" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+            <a href="view_reservation.html?id=1" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="reservation-item">
+          <div class="reservation-details">
+            <p class="reservation-client"><strong>Cliente:</strong> Maria Fernandes</p>
+            <p class="reservation-vehicle"><strong>Veículo:</strong> BMW iX xDrive40</p>
+            <p class="reservation-dates"><strong>Datas:</strong> 05/06/2024 - 15/06/2024</p>
+            <p class="reservation-status"><strong>Status:</strong> Confirmada</p>
+          </div>
+          <div class="reservation-actions">
+            <a href="edit_reservation.html?id=2" class="btn"><i class="fas fa-edit"></i> Editar</a>
+            <a href="delete_reservation.html?id=2" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+            <a href="view_reservation.html?id=2" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="reservation-item">
+          <div class="reservation-details">
+            <p class="reservation-client"><strong>Cliente:</strong> Carlos Souza</p>
+            <p class="reservation-vehicle"><strong>Veículo:</strong> NISSAN JUKE HÍBRIDO</p>
+            <p class="reservation-dates"><strong>Datas:</strong> 10/06/2024 - 20/06/2024</p>
+            <p class="reservation-status"><strong>Status:</strong> Pendente</p>
+          </div>
+          <div class="reservation-actions">
+            <a href="edit_reservation.html?id=3" class="btn"><i class="fas fa-edit"></i> Editar</a>
+            <a href="delete_reservation.html?id=3" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+            <a href="view_reservation.html?id=3" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="reservation-item">
+          <div class="reservation-details">
+            <p class="reservation-client"><strong>Cliente:</strong> Ana Pereira</p>
+            <p class="reservation-vehicle"><strong>Veículo:</strong> Alfa Romeo Giulia 2.2 Turbo Diesel 160cv Sprint AT8</p>
+            <p class="reservation-dates"><strong>Datas:</strong> 15/06/2024 - 25/06/2024</p>
+            <p class="reservation-status"><strong>Status:</strong> Confirmada</p>
+          </div>
+          <div class="reservation-actions">
+            <a href="edit_reservation.html?id=4" class="btn"><i class="fas fa-edit"></i> Editar</a>
+            <a href="delete_reservation.html?id=4" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+            <a href="view_reservation.html?id=4" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+          </div>
+        </div>
+        <div class="reservation-item">
+          <div class="reservation-details">
+            <p class="reservation-client"><strong>Cliente:</strong> Tiago Saramago</p>
+            <p class="reservation-vehicle"><strong>Veículo:</strong> Audi Q5 2.0 TDI Quattro</p>
+            <p class="reservation-dates"><strong>Datas:</strong> 20/06/2024 - 30/06/2024</p>
+            <p class="reservation-status"><strong>Status:</strong> Pendente</p>
+          </div>
+          <div class="reservation-actions">
+            <a href="edit_reservation.html?id=5" class="btn"><i class="fas fa-edit"></i> Editar</a>
+            <a href="delete_reservation.html?id=5" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+            <a href="view_reservation.html?id=5" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-button" disabled>Anterior</button>
+        <button class="pagination-button active">1</button>
+        <a href="gestor_reservas2.html"><button class="pagination-button">2</button></a>
+        <a href="gestor_reservas2.html"><button class="pagination-button">Próximo</button></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Editar Reserva</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/gestor.css">
+  <link rel="stylesheet" href="../css/editarreserva.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="gestor_inicial.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="gestor_reservas.html" class="active"><i class="fas fa-calendar-alt"></i> Gerir Reservas</a></li>
+          <li><a href="gestor_veiculos.html"><i class="fas fa-car"></i> Gerir Veículos</a></li>
+          <li><a href="gestor_feedbacks.html"><i class="fas fa-comments"></i> Gerir Feedbacks</a></li>
+          <li><a href="gestor_manutencoes.html"><i class="fas fa-wrench"></i> Gerir Manutenções</a></li>
+          <li><a href="gestor_clientes.html"><i class="fas fa-users"></i> Gerir Clientes</a></li>
+        </div>
+        <div class="right-menu">
+          <li><a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="edit-reservation">
+      <h2>Editar Reserva</h2>
+      <form action="submit_editar_reserva.html" method="POST">
+        <div class="form-group">
+          <label for="cliente">Nome do Cliente</label>
+          <input type="text" id="cliente" name="cliente" value="João Silva" readonly>
+        </div>
+        <div class="form-group">
+          <label for="veiculo">Veículo</label>
+          <input type="text" id="veiculo" name="veiculo" value="Mercedes-Benz Classe A 200" readonly>
+        </div>
+        <div class="form-group">
+          <label for="data_inicio">Data de Início</label>
+          <input type="date" id="data_inicio" name="data_inicio" value="2024-06-01" required>
+        </div>
+        <div class="form-group">
+          <label for="data_fim">Data de Fim</label>
+          <input type="date" id="data_fim" name="data_fim" value="2024-06-10" required>
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" name="status" required>
+            <option value="confirmada" selected>Confirmada</option>
+            <option value="pendente">Pendente</option>
+            <option value="cancelada">Cancelada</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Salvar Alterações</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

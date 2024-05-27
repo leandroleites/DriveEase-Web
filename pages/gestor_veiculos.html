@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase - Gerir Veículos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/gestor.css">
+  <link rel="stylesheet" href="../css/gerirveiculos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
+          <li><a href="gestor_inicial.html"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="gestor_reservas.html"><i class="fas fa-calendar-alt"></i> Gerir Reservas</a></li>
+          <li><a href="gestor_veiculos.html" class="active"><i class="fas fa-car"></i> Gerir Veículos</a></li>
+          <li><a href="gestor_feedbacks.html"><i class="fas fa-comments"></i> Gerir Feedbacks</a></li>
+          <li><a href="gestor_manutencoes.html"><i class="fas fa-wrench"></i> Gerir Manutenções</a></li>
+          <li><a href="gestor_clientes.html"><i class="fas fa-users"></i> Gerir Clientes</a></li>
+        </div>
+        <div class="right-menu">
+          <li><a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="vehicle-management">
+      <h2>Gerir Veículos</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar por nome ou matrícula">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="add-vehicle">
+        <a href="adicionar_veiculo.html" class="btn-add"><i class="fas fa-plus"></i> Adicionar Veículo</a>
+      </div>
+      <div class="vehicle-list">
+        <div class="vehicle-item">
+          <img src="../images/mercedesa200.png" alt="Mercedes-Benz">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Mercedes-Benz Classe A 200</p>
+            <p class="vehicle-status">Económico · Automático · Gasolina</p>
+            <p class="vehicle-price">€34/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=1" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=1" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=1" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=1" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/bmwxi40.png" alt="BMW">
+          <div class="vehicle-details">
+            <p class="vehicle-name">BMW iX xDrive40</p>
+            <p class="vehicle-status">Luxuoso · Automático · Elétrico</p>
+            <p class="vehicle-price">€83/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=2" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=2" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=2" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=2" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/nissanjuke.png" alt="Nissan">
+          <div class="vehicle-details">
+            <p class="vehicle-name">NISSAN JUKE HÍBRIDO</p>
+            <p class="vehicle-status">Intermédio · Automático · Híbrido</p>
+            <p class="vehicle-price">€49/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=3" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=3" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=3" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=3" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/alfaromeogiulia.png" alt="Alfa Romeo">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Alfa Romeo Giulia 2.2 Turbo Diesel 160cv Sprint AT8</p>
+            <p class="vehicle-status">Estatuto · Automático · Diesel</p>
+            <p class="vehicle-price">€66/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=4" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=4" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=4" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=4" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/audiq5.png" alt="Audi">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Audi Q5 2.0 TDI Quattro</p>
+            <p class="vehicle-status">Familiar · Automático · Diesel</p>
+            <p class="vehicle-price">€54/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=5" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=5" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=5" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=5" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+        <div class="vehicle-item">
+          <img src="../images/teslamodels.png" alt="Tesla">
+          <div class="vehicle-details">
+            <p class="vehicle-name">Tesla Model S Long Range</p>
+            <p class="vehicle-status">Luxuoso · Automático · Elétrico</p>
+            <p class="vehicle-price">€81/dia</p>
+            <div class="vehicle-actions">
+              <a href="edit_vehicle.html?id=6" class="btn"><i class="fas fa-edit"></i> Editar</a>
+              <a href="delete_vehicle.html?id=6" class="btn"><i class="fas fa-trash"></i> Excluir</a>
+              <a href="view_vehicle.html?id=6" class="btn"><i class="fas fa-eye"></i> Ver Detalhes</a>
+              <a href="solicitar_manutencao.html?id=6" class="btn"><i class="fas fa-tools"></i> Solicitar Manutenção</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-button" disabled>Anterior</button>
+        <button class="pagination-button active">1</button>
+        <a href="gestor_veiculos2.html"><button class="pagination-button">2</button></a>
+        <a href="gestor_veiculos2.html"><button class="pagination-button">Próximo</button></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
