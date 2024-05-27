@@ -64,11 +64,17 @@ nav ul li.account a {
 /* Hero Section */
 .hero {
   background: rgba(0, 0, 0, 0.6);
-  padding: 50px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .hero-text h1 {
+  font-size: 5em; /* Aumentar tamanho do nome da empresa */
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text h2 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #fff;
@@ -305,3 +311,4 @@ footer p {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
 }
+  

@@ -3,94 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DriveEase - Bem-vindo</title>
+  <title>DriveEase - Aluguer de Carros</title>
   <link rel="stylesheet" href="../css/inicialLogado.css">
   <link rel="icon" href="../images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-      <nav>
-        <ul>
+  <header>
+    <nav>
+      <ul>
+        <div class="left-menu">
           <li><a href="inicialLogado.html" class="active"><i class="fas fa-home"></i> Início</a></li>
           <li><a href="veiculos.html"><i class="fas fa-car"></i> Veículos</a></li>
           <li><a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a></li>
           <li><a href="assistencia.html"><i class="fas fa-life-ring"></i> Assistência</a></li>
           <li><a href="gfeedbacks.html"><i class="fas fa-comments"></i> Feedbacks</a></li>
-          <li class="account"><a href="perfil.html"><i class="fas fa-user"></i> Meu Perfil</a></li>
+        </div>
+        <div class="left-menu">
+          <li class="account"><a href="#"><i class="fas fa-user"></i> Meu Perfil</a></li>
           <li class="right-menu"><a href="inicial.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <p class="subheading">Reserve já a sua viatura</p>
         </div>
-        <div class="search-form">
-          <form action="#">
-            <div class="form-group">
-              <label for="pais">País</label>
-              <select id="pais">
-                <option value="portugal">Portugal</option>
-                <option value="espanha">Espanha</option>
-                <option value="franca">França</option>
-                <!-- Adicione mais opções conforme necessário -->
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cidade">Cidade</label>
-              <select id="cidade">
-                <option value="lisboa">Lisboa</option>
-                <option value="porto">Porto</option>
-                <option value="faro">Faro</option>
-                <!-- Adicione mais opções conforme necessário -->
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="data-inicio">Data de Início</label>
-              <input type="date" id="data-inicio">
-            </div>
-            <div class="form-group">
-              <label for="data-fim">Data de Fim</label>
-              <input type="date" id="data-fim">
-            </div>
-            <button type="submit">Pesquisar</button>
-          </form>
-        </div>
-      </section>
-  
-      <!-- Seção de Feedbacks -->
-      <section class="feedbacks">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="feedback">
-          <p>"Serviço excelente e carros em ótimas condições!"</p>
-          <p>- João Silva</p>
-        </div>
-        <div class="feedback">
-          <p>"Muito fácil de reservar e atendimento ótimo!"</p>
-          <p>- Maria Fernandes</p>
-        </div>
-        <div class="feedback">
-          <p>"Os melhores preços e grande variedade de veículos."</p>
-          <p>- Carlos Souza</p>
-        </div>
-        <div class="feedback">
-          <p>"Excelente experiência do início ao fim."</p>
-          <p>- Ana Pereira</p>
-        </div>
-      </section>
-  
-      <!-- Seção de sobreposição escura -->
-      <section class="overlay-section"></section>
-    </main>
-  
-    <footer>
-      <div class="contact-info">
-        <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
-        <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="company-name">DriveEase</h1> <!-- Adicione este elemento -->
+        <h2>Reserve já a sua viatura</h2>
       </div>
-      <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
-    </footer>
-  </body>
-  </html>
+      <div class="search-form">
+        <form id="searchForm">
+          <div class="form-group">
+            <label for="pais">País</label>
+            <select id="pais" required>
+              <option value="">Selecione o País</option>
+              <option value="portugal">Portugal</option>
+              <option value="espanha">Espanha</option>
+              <option value="franca">França</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <select id="cidade" required>
+              <option value="">Selecione a Cidade</option>
+              <!-- As opções serão adicionadas dinamicamente -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="data-inicio">Data de Início</label>
+            <input type="date" id="data-inicio" required>
+          </div>
+          <div class="form-group">
+            <label for="data-fim">Data de Fim</label>
+            <input type="date" id="data-fim" required>
+          </div>
+          <button type="submit" id="searchButton">Pesquisar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Seção de Feedbacks -->
+    <section class="feedbacks">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="feedback">
+        <p>"Serviço excelente e carros em ótimas condições!"</p>
+        <p>- João Silva</p>
+      </div>
+      <div class="feedback">
+        <p>"Muito fácil de reservar e atendimento ótimo!"</p>
+        <p>- Maria Fernandes</p>
+      </div>
+      <div class="feedback">
+        <p>"Os melhores preços e grande variedade de veículos."</p>
+        <p>- Carlos Souza</p>
+      </div>
+      <div class="feedback">
+        <p>"Excelente experiência do início ao fim."</p>
+        <p>- Ana Pereira</p>
+      </div>
+      <div class="feedback">
+        <p>"Experiência incrível! Recomendo."</p>
+        <p>- Tiago Saramago</p>
+      </div>
+    </section>
+
+    <!-- Seção de sobreposição escura -->
+    <section class="overlay-section"></section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +351 252 300 500</span><br>
+      <span><i class="fas fa-envelope"></i> contato@driveease.com</span>
+    </div>
+    <p>&copy; 2024 DriveEase. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modal Login/Registo -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login/Registo</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="modal-button">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mensagem Sobreposta -->
+  <div class="message-overlay" id="messageOverlay">
+    <div class="message">
+      <span class="close" id="closeMessage">&times;</span>
+      <h2>Bem-vindo ao DriveEase!</h2>
+      <p>Novos usuários têm 15% de desconto na sua primeira reserva. Aproveite nossa frota de veículos modernos e bem mantidos para uma experiência de condução incrível. Não perca esta oportunidade exclusiva!</p>
+    </div>
+  </div>
+
+  <script>
+    // Função para mostrar o modal e adicionar a classe no-scroll
+    function showModal(modal) {
+      modal.style.display = "flex";
+      document.body.classList.add("no-scroll");
+    }
+
+    // Função para esconder o modal e remover a classe no-scroll
+    function hideModal(modal) {
+      modal.style.display = "none";
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Obter o modal de login/registo
+    var loginModal = document.getElementById("loginModal");
+
+    // Obter o botão que abre o modal de login/registo
+    var btnLogin = document.getElementById("loginBtn");
+    var heroLoginLink = document.getElementById("heroLoginLink");
+
+    // Obter o elemento <span> que fecha o modal de login/registo
+    var closeLoginModal = document.getElementById("closeLoginModal");
+
+    // Quando o usuário clicar no botão, abre o modal de login/registo
+    btnLogin.onclick = function() {
+      showModal(loginModal);
+    }
+    heroLoginLink.onclick = function() {
+      showModal(loginModal);
+    }
+
+    // Quando o usuário clicar no <span> (x), fecha o modal de login/registo
+    closeLoginModal.onclick = function() {
+      hideModal(loginModal);
+    }
+
+    // Quando o usuário clicar em qualquer lugar fora do modal de login/registo, fecha o modal
+    window.onclick = function(event) {
+      if (event.target == loginModal) {
+        hideModal(loginModal);
+      }
+    }
+
+    // Obter a mensagem sobreposta
+    var messageOverlay = document.getElementById("messageOverlay");
+
+    // Obter o botão que abre a mensagem sobreposta
+    var saibaMaisBtn = document.getElementById("saibaMaisBtn");
+
+    // Obter o elemento <span> que fecha a mensagem sobreposta
+    var closeMessage = document.getElementById("closeMessage");
+
+    // Quando o usuário clicar no botão, abre a mensagem sobreposta
+    saibaMaisBtn.onclick = function() {
+      showModal(messageOverlay);
+    }
+
+    // Quando o usuário clicar no <span> (x), fecha a mensagem sobreposta
+    closeMessage.onclick = function() {
+      hideModal(messageOverlay);
+    }
+
+    // Quando o usuário clicar em qualquer lugar fora da mensagem sobreposta, fecha a mensagem
+    window.onclick = function(event) {
+      if (event.target == messageOverlay) {
+        hideModal(messageOverlay);
+      }
+      if (event.target == loginModal) {
+        hideModal(loginModal);
+      }
+    }
+
+    // Função para redirecionar após o login/registo
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      console.log('Login bem-sucedido, redirecionando...');
+      window.location.href = 'inicialLogado.html';
+    });
+
+    // Cidades por país
+    const cidadesPorPais = {
+      portugal: ["Lisboa", "Porto", "Faro"],
+      espanha: ["Madrid", "Barcelona", "Sevilha"],
+      franca: ["Paris", "Lyon", "Marselha"]
+    };
+
+    // Atualizar as opções de cidade com base no país selecionado
+    document.getElementById('pais').addEventListener('change', function() {
+      const pais = this.value;
+      const cidadeSelect = document.getElementById('cidade');
+      cidadeSelect.innerHTML = '<option value="">Selecione a Cidade</option>'; // Resetar as opções
+
+      if (pais && cidadesPorPais[pais
